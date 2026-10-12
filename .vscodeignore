@@ -3,7 +3,7 @@
 .vscode-test/**
 test/**
 tools/**
-dist/**
+output/**
 node_modules/**
 images/*.svg
 eslint.config.mjs

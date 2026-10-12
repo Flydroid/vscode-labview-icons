@@ -376,9 +376,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "node --test",
-    "prepackage": "node -e \"require('fs').mkdirSync('dist',{recursive:true})\"",
-    "package": "vsce package --allow-missing-repository --out dist",
-    "icons": "python3 tools/build_icons.py"
+    "prepackage": "node -e \"require('fs').mkdirSync('output',{recursive:true})\"",
+    "package": "vsce package --allow-missing-repository --no-rewrite-relative-links --out output",
+    "icons": "python3 tools/build_icons.py && python3 tools/build_preview.py"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

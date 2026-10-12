@@ -8,18 +8,7 @@ File icons for LabVIEW files in the VS Code explorer, tabs and breadcrumbs.
 - A class-member VI icon for VIs owned by a `.lvclass`.
 - XML highlighting for XML-based LabVIEW files. INI highlighting for `.aliases` and `.lvlps`.
 
-| Files | Icon |
-|---|---|
-| `.vi` | front panel |
-| `.vi` owned by a `.lvclass` | class cube |
-| `.vim` | coloured blocks |
-| `.vit` `.ctt` | VI / control, dashed template border |
-| `.ctl` `.xctl` | slider |
-| `.lvclass` | cube |
-| `.lvlib` `.lvlibp` `.llb` | library, packed library, VI library |
-| `.lvproj` `.lvlps` `.aliases` | project, project settings, aliases |
-| `.lvsc` `.xnode` `.rtm` `.mnu` `.lvbitx` | statechart, XNode, run-time menu, FPGA bitfile |
-| `.tdms` `.tdms_index` `.lvm` | measurement data |
+![All icons on light and dark backgrounds](images/icons-preview.png)
 
 ## Requirements
 
@@ -49,18 +38,22 @@ The extension reads every `.lvclass` file in the workspace and finds the member 
 npm ci
 npm run lint
 npm test
-npm run package   # writes dist/labview-file-icons-<version>.vsix
+npm run package   # writes output/labview-file-icons-<version>.vsix
 ```
 
 Press F5 to start an Extension Development Host.
 
-To change an icon, edit `tools/build_icons.py` and run `npm run icons`. `images/icon.png` is rendered from `images/icon.svg`.
+To change an icon, edit `tools/build_icons.py` and run `npm run icons`. This also rebuilds `images/icons-preview.svg`. Render it to `images/icons-preview.png` for the README (the Marketplace does not accept SVG images). `images/icon.png` is rendered from `images/icon.svg`.
 
 ## Release
 
 1. Update `version` in `package.json` and `CHANGELOG.md`.
 2. Commit, then tag `v<version>` and push the tag.
-3. CI builds the `.vsix` and attaches it to a GitHub Release. If the `VSCE_PAT` secret is set, CI also publishes to the Marketplace.
+3. CI checks that the tag matches the version, builds the `.vsix` and attaches it to a GitHub Release.
+4. Download the `.vsix` from the GitHub Release.
+5. Open the [Marketplace publisher page](https://marketplace.visualstudio.com/manage) and upload the `.vsix`:
+   - First release: **New extension → Visual Studio Code**.
+   - Later releases: the extension's **⋯** menu → **Update**.
 
 ## Trademarks
 

@@ -2,7 +2,7 @@ import js from '@eslint/js';
 import globals from 'globals';
 
 export default [
-  { ignores: ['node_modules/', 'dist/', '.vscode-test/'] },
+  { ignores: ['node_modules/', 'output/', '.vscode-test/'] },
   js.configs.recommended,
   {
     files: ['**/*.js'],
