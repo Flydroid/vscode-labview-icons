@@ -1,0 +1,8 @@
+{
+  "scopeName": "text.xml.labview.lvproj",
+  "patterns": [
+    {
+      "include": "text.xml"
+    }
+  ]
+}

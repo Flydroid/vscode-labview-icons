@@ -1,0 +1,8 @@
+{
+  "scopeName": "source.ini.labview.lvlps",
+  "patterns": [
+    {
+      "include": "source.ini"
+    }
+  ]
+}
