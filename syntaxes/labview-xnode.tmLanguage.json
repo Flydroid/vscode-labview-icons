@@ -1,0 +1,8 @@
+{
+  "scopeName": "text.xml.labview.xnode",
+  "patterns": [
+    {
+      "include": "text.xml"
+    }
+  ]
+}

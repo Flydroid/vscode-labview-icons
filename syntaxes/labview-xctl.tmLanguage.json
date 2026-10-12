@@ -1,0 +1,8 @@
+{
+  "scopeName": "text.xml.labview.xctl",
+  "patterns": [
+    {
+      "include": "text.xml"
+    }
+  ]
+}

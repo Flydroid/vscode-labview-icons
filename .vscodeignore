@@ -1,0 +1,12 @@
+.github/**
+.vscode/**
+.vscode-test/**
+test/**
+tools/**
+output/**
+node_modules/**
+images/*.svg
+eslint.config.mjs
+.gitignore
+.gitattributes
+**/*.map

@@ -1,0 +1,389 @@
+{
+  "name": "labview-file-icons",
+  "displayName": "File Icons for LabVIEW",
+  "description": "File icons for LabVIEW files (.vi, .ctl, .lvclass, .lvlib, .lvproj, ...), with class-member VI icons.",
+  "version": "1.0.1",
+  "publisher": "JonathanGraesser",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1E2A44",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "labview",
+    "ni",
+    "vi",
+    "lvproj",
+    "lvclass",
+    "icons",
+    "file icons"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "workspaceContains:**/*.lvclass"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "Icons work in Restricted Mode. Class-member VI icons need a trusted workspace, because they write files.associations to the workspace settings."
+    },
+    "virtualWorkspaces": {
+      "supported": "limited",
+      "description": "Class-member VI icons need a file system workspace."
+    }
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "labview-vi",
+        "aliases": [
+          "LabVIEW VI"
+        ],
+        "extensions": [
+          ".vi"
+        ],
+        "icon": {
+          "light": "./icons/vi.svg",
+          "dark": "./icons/vi.svg"
+        }
+      },
+      {
+        "id": "labview-vi-class",
+        "aliases": [
+          "LabVIEW Class Member VI"
+        ],
+        "icon": {
+          "light": "./icons/vi-class.svg",
+          "dark": "./icons/vi-class.svg"
+        }
+      },
+      {
+        "id": "labview-vim",
+        "aliases": [
+          "LabVIEW Malleable VI"
+        ],
+        "extensions": [
+          ".vim"
+        ],
+        "icon": {
+          "light": "./icons/vim.svg",
+          "dark": "./icons/vim.svg"
+        }
+      },
+      {
+        "id": "labview-vit",
+        "aliases": [
+          "LabVIEW VI Template"
+        ],
+        "extensions": [
+          ".vit"
+        ],
+        "icon": {
+          "light": "./icons/vit.svg",
+          "dark": "./icons/vit.svg"
+        }
+      },
+      {
+        "id": "labview-ctl",
+        "aliases": [
+          "LabVIEW Control"
+        ],
+        "extensions": [
+          ".ctl"
+        ],
+        "icon": {
+          "light": "./icons/ctl.svg",
+          "dark": "./icons/ctl.svg"
+        }
+      },
+      {
+        "id": "labview-ctt",
+        "aliases": [
+          "LabVIEW Control Template"
+        ],
+        "extensions": [
+          ".ctt"
+        ],
+        "icon": {
+          "light": "./icons/ctt.svg",
+          "dark": "./icons/ctt.svg"
+        }
+      },
+      {
+        "id": "labview-llb",
+        "aliases": [
+          "LabVIEW VI Library (LLB)"
+        ],
+        "extensions": [
+          ".llb"
+        ],
+        "icon": {
+          "light": "./icons/llb.svg",
+          "dark": "./icons/llb.svg"
+        }
+      },
+      {
+        "id": "labview-lvlibp",
+        "aliases": [
+          "LabVIEW Packed Library"
+        ],
+        "extensions": [
+          ".lvlibp"
+        ],
+        "icon": {
+          "light": "./icons/lvlibp.svg",
+          "dark": "./icons/lvlibp.svg"
+        }
+      },
+      {
+        "id": "labview-rtm",
+        "aliases": [
+          "LabVIEW Run-Time Menu"
+        ],
+        "extensions": [
+          ".rtm",
+          ".mnu"
+        ],
+        "icon": {
+          "light": "./icons/rtm.svg",
+          "dark": "./icons/rtm.svg"
+        }
+      },
+      {
+        "id": "labview-tdms",
+        "aliases": [
+          "TDMS"
+        ],
+        "extensions": [
+          ".tdms",
+          ".tdms_index"
+        ],
+        "icon": {
+          "light": "./icons/tdms.svg",
+          "dark": "./icons/tdms.svg"
+        }
+      },
+      {
+        "id": "labview-lvm",
+        "aliases": [
+          "LabVIEW Measurement"
+        ],
+        "extensions": [
+          ".lvm"
+        ],
+        "icon": {
+          "light": "./icons/lvm.svg",
+          "dark": "./icons/lvm.svg"
+        }
+      },
+      {
+        "id": "labview-lvproj",
+        "aliases": [
+          "LabVIEW Project"
+        ],
+        "extensions": [
+          ".lvproj"
+        ],
+        "icon": {
+          "light": "./icons/lvproj.svg",
+          "dark": "./icons/lvproj.svg"
+        }
+      },
+      {
+        "id": "labview-lvlib",
+        "aliases": [
+          "LabVIEW Library"
+        ],
+        "extensions": [
+          ".lvlib"
+        ],
+        "icon": {
+          "light": "./icons/lvlib.svg",
+          "dark": "./icons/lvlib.svg"
+        }
+      },
+      {
+        "id": "labview-lvclass",
+        "aliases": [
+          "LabVIEW Class"
+        ],
+        "extensions": [
+          ".lvclass"
+        ],
+        "icon": {
+          "light": "./icons/lvclass.svg",
+          "dark": "./icons/lvclass.svg"
+        }
+      },
+      {
+        "id": "labview-xctl",
+        "aliases": [
+          "LabVIEW XControl"
+        ],
+        "extensions": [
+          ".xctl"
+        ],
+        "icon": {
+          "light": "./icons/xctl.svg",
+          "dark": "./icons/xctl.svg"
+        }
+      },
+      {
+        "id": "labview-xnode",
+        "aliases": [
+          "LabVIEW XNode"
+        ],
+        "extensions": [
+          ".xnode"
+        ],
+        "icon": {
+          "light": "./icons/xnode.svg",
+          "dark": "./icons/xnode.svg"
+        }
+      },
+      {
+        "id": "labview-lvsc",
+        "aliases": [
+          "LabVIEW Statechart"
+        ],
+        "extensions": [
+          ".lvsc"
+        ],
+        "icon": {
+          "light": "./icons/lvsc.svg",
+          "dark": "./icons/lvsc.svg"
+        }
+      },
+      {
+        "id": "labview-lvbitx",
+        "aliases": [
+          "LabVIEW FPGA Bitfile"
+        ],
+        "extensions": [
+          ".lvbitx"
+        ],
+        "icon": {
+          "light": "./icons/lvbitx.svg",
+          "dark": "./icons/lvbitx.svg"
+        }
+      },
+      {
+        "id": "labview-aliases",
+        "aliases": [
+          "LabVIEW Aliases"
+        ],
+        "extensions": [
+          ".aliases"
+        ],
+        "icon": {
+          "light": "./icons/aliases.svg",
+          "dark": "./icons/aliases.svg"
+        }
+      },
+      {
+        "id": "labview-lvlps",
+        "aliases": [
+          "LabVIEW Project Settings"
+        ],
+        "extensions": [
+          ".lvlps"
+        ],
+        "icon": {
+          "light": "./icons/lvlps.svg",
+          "dark": "./icons/lvlps.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "labview-lvproj",
+        "scopeName": "text.xml.labview.lvproj",
+        "path": "./syntaxes/labview-lvproj.tmLanguage.json"
+      },
+      {
+        "language": "labview-lvlib",
+        "scopeName": "text.xml.labview.lvlib",
+        "path": "./syntaxes/labview-lvlib.tmLanguage.json"
+      },
+      {
+        "language": "labview-lvclass",
+        "scopeName": "text.xml.labview.lvclass",
+        "path": "./syntaxes/labview-lvclass.tmLanguage.json"
+      },
+      {
+        "language": "labview-xctl",
+        "scopeName": "text.xml.labview.xctl",
+        "path": "./syntaxes/labview-xctl.tmLanguage.json"
+      },
+      {
+        "language": "labview-xnode",
+        "scopeName": "text.xml.labview.xnode",
+        "path": "./syntaxes/labview-xnode.tmLanguage.json"
+      },
+      {
+        "language": "labview-lvsc",
+        "scopeName": "text.xml.labview.lvsc",
+        "path": "./syntaxes/labview-lvsc.tmLanguage.json"
+      },
+      {
+        "language": "labview-lvbitx",
+        "scopeName": "text.xml.labview.lvbitx",
+        "path": "./syntaxes/labview-lvbitx.tmLanguage.json"
+      },
+      {
+        "language": "labview-aliases",
+        "scopeName": "source.ini.labview.aliases",
+        "path": "./syntaxes/labview-aliases.tmLanguage.json"
+      },
+      {
+        "language": "labview-lvlps",
+        "scopeName": "source.ini.labview.lvlps",
+        "path": "./syntaxes/labview-lvlps.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "title": "File Icons for LabVIEW",
+      "properties": {
+        "labviewIcons.classMemberIcons": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "markdownDescription": "Show the class-member icon for VIs owned by a `.lvclass`. Writes managed `files.associations` entries (value `labview-vi-class`) to the workspace settings."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "labviewIcons.refresh",
+        "title": "Refresh Class Member Icons",
+        "category": "LabVIEW Icons"
+      },
+      {
+        "command": "labviewIcons.clear",
+        "title": "Remove Class Member Associations",
+        "category": "LabVIEW Icons"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test",
+    "prepackage": "node -e \"require('fs').mkdirSync('output',{recursive:true})\"",
+    "package": "vsce package --allow-missing-repository --no-rewrite-relative-links --out output",
+    "icons": "python3 tools/build_icons.py && python3 tools/build_preview.py"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vscode/vsce": "^4.0.0",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0"
+  }
+}
