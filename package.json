@@ -2,9 +2,13 @@
   "name": "labview-file-icons",
   "displayName": "File Icons for LabVIEW",
   "description": "File icons for LabVIEW files (.vi, .ctl, .lvclass, .lvlib, .lvproj, ...), with class-member VI icons.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "JonathanGraesser",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flydroid/vscode-labview-icons.git"
+  },
   "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#1E2A44",
@@ -377,7 +381,7 @@
     "lint": "eslint .",
     "test": "node --test",
     "prepackage": "node -e \"require('fs').mkdirSync('output',{recursive:true})\"",
-    "package": "vsce package --allow-missing-repository --no-rewrite-relative-links --out output",
+    "package": "vsce package --out output",
     "icons": "python3 tools/build_icons.py && python3 tools/build_preview.py"
   },
   "devDependencies": {
